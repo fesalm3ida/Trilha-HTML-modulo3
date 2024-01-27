@@ -27,7 +27,7 @@ body, html {
     grid-template-areas: "sidebar main anchors";
     grid-template-columns: minmax(0,30rem) minmax(0,2.5fr) minmax(0,15rem);
     padding-left: 1rem;
-    padding-right: 10rem;
+    padding-right: 1rem;
 }
 .footer {
     min-height: 100px;
@@ -39,7 +39,16 @@ body, html {
 }
 .sidebar {
     border-right: solid 1px #cdcdcd;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    
 }
-figure {
+.figure {
     text-align: center;
+}
+
+@media screen and (max-width: 1020px) {
+    .content, .sidebar, .main {
+        display:none;
+    }
 }
